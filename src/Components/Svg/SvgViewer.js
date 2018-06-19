@@ -9,7 +9,7 @@ const SvgViewer = (props) => {
   return (
     <ViewerContext.Consumer>
       {( viewer ) => (
-        <div>
+        <div className="container">
           <ReactSVGPanZoom
             width={viewer.width} 
             height={viewer.height}
