@@ -3,6 +3,7 @@ import { TOOL_AUTO } from 'react-svg-pan-zoom';
 
 import ViewerContext from './viewerContext';
 import SvgViewer from './SvgViewer';
+import theme from '../../Theme/Theme';
 
 class Svg extends Component {
 
@@ -14,11 +15,11 @@ class Svg extends Component {
         width: 500,
         height: 500,
 
-        background: '#272822',
+        background: theme.svgBackground,
         detectAutoPan: false,
         detectPinchGesture: true,
         miniaturePosition: 'none',
-        SVGBackground: '#272822',
+        SVGBackground: theme.svgBackground,
         tool: TOOL_AUTO,
         toolbarPosition: 'none',
         value: null,
